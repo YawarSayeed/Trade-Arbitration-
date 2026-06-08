@@ -1,0 +1,219 @@
+Create a polished clickable web demo for Cognisee called “Epistemic Foraging for International Trade Dispute Arbitration.”
+
+Context:
+This is a concept demo for law firms handling complex cross-border trade disputes. The demo should show how Cognisee helps arbitration teams explore venue strategy by testing the same dispute across four major arbitration-friendly legal seats: New York, London, Singapore, and Hong Kong.
+
+Goal:
+Build an interactive clickable prototype that demonstrates how a legal team can evaluate risk, win probability, precedent fit, procedural friction, enforcement confidence, evidentiary burden, and strategic tradeoffs across jurisdictions. This is not a legal advice tool. It is a decision-intelligence demo showing how expert judgment, case history, tacit legal knowledge, and jurisdictional patterns can support better venue selection.
+
+Core concept:
+The demo should show “epistemic foraging,” meaning the user can explore evidence, assumptions, precedent clusters, expert judgment signals, counterarguments, uncertainty, and decision paths rather than receiving a simple answer.
+
+Design style:
+Use a premium enterprise SaaS interface. Dark institutional theme with deep green, charcoal, off-white text, and subtle gold accents. It should feel like a high-stakes legal strategy cockpit for a global law firm. Keep it clean, serious, and boardroom-ready.
+
+Demo flow:
+
+1. Opening dashboard
+   Show a fictional case:
+   “Atlas Renewables v. Meridian Ports Authority”
+   A cross-border infrastructure and supply-chain dispute involving delayed port access, force majeure claims, sovereign counterparty risk, tariff disruption, and alleged breach of long-term procurement obligations.
+
+Show a short case summary card:
+
+* Claimant: Atlas Renewables Ltd.
+* Respondent: Meridian Ports Authority
+* Dispute type: International trade, infrastructure, procurement, force majeure, sovereign counterparty exposure
+* Claim value: $420M
+* Contract law ambiguity: Medium-high
+* Evidence quality: Mixed
+* Enforcement sensitivity: High
+* Strategic objective: Maximize winnability while reducing procedural and enforcement risk
+
+2. Four jurisdiction cards
+   Display four clickable venue cards:
+
+* New York
+* London
+* Singapore
+* Hong Kong
+
+Each card should show:
+
+* Winnability score
+* Procedural confidence
+* Enforcement confidence
+* Precedent alignment
+* Cost/time risk
+* Strategic risk level
+
+Use sample scores:
+New York:
+Winnability 72
+Procedural confidence 81
+Enforcement confidence 78
+Precedent alignment 69
+Cost/time risk Medium-high
+Strategic risk Medium
+
+London:
+Winnability 76
+Procedural confidence 86
+Enforcement confidence 84
+Precedent alignment 74
+Cost/time risk Medium-high
+Strategic risk Low-medium
+
+Singapore:
+Winnability 79
+Procedural confidence 88
+Enforcement confidence 82
+Precedent alignment 71
+Cost/time risk Medium
+Strategic risk Low
+
+Hong Kong:
+Winnability 68
+Procedural confidence 74
+Enforcement confidence 70
+Precedent alignment 66
+Cost/time risk Medium
+Strategic risk Medium-high
+
+3. Clickable jurisdiction deep dive
+   When the user clicks a jurisdiction, open a detailed panel with:
+
+* “Why this venue may help”
+* “Why this venue may hurt”
+* “Relevant precedent clusters”
+* “Tacit expert signals”
+* “Procedural risk”
+* “Enforcement considerations”
+* “Adversary strategy likely response”
+* “What senior arbitration counsel would test next”
+
+For each jurisdiction, include 3 to 5 realistic but fictional precedent clusters. Do not use real case names unless clearly labeled as illustrative. Example clusters:
+
+* Force majeure interpretation in infrastructure disruption
+* Sovereign-linked commercial entity disputes
+* Port access and logistics interruption claims
+* Tariff shock and contract frustration arguments
+* Evidence reliability in multi-jurisdiction supply-chain disputes
+
+4. Epistemic foraging map
+   Create a central interactive visual called “Foraging Map.”
+   It should show nodes connected by lines:
+
+* Contract text
+* Governing law ambiguity
+* Force majeure history
+* Sovereign counterparty behavior
+* Tribunal composition risk
+* Enforcement pathway
+* Evidence credibility
+* Prior arbitral patterns
+* Local court support
+* Settlement leverage
+* Public-sector sensitivity
+* Expert tacit judgment
+
+When a user clicks a node, show a side drawer explaining:
+
+* What this factor means
+* Why it matters
+* Which jurisdictions it strengthens or weakens
+* What evidence the legal team should collect next
+* Confidence level
+* Uncertainty notes
+
+5. Tacit knowledge layer
+   Create a panel called “Tacit Counsel Layer.”
+   This should demonstrate insights that are not found directly in case law databases:
+
+* How tribunals may weigh sovereign-linked disruption claims
+* When procedural efficiency matters more than precedent density
+* How local court support may shape settlement pressure
+* How opposing counsel may frame force majeure and frustration
+* Which evidence gaps could change the filing recommendation
+* What experienced arbitration partners would debate before filing
+
+Make this feel like Cognisee is structuring expert legal judgment, not replacing lawyers.
+
+6. Comparative recommendation panel
+   Create a final “Strategic Filing Recommendation” section.
+   It should rank venues:
+7. Singapore
+8. London
+9. New York
+10. Hong Kong
+
+Show that Singapore is the recommended venue because of:
+
+* Strong procedural reliability
+* Strong institutional arbitration support
+* Lower strategic friction
+* Balanced enforcement profile
+* Good fit for trade and infrastructure disputes
+
+But also show a “Partner Review Required” warning:
+“Recommendation is conditional. Filing strategy should be reviewed against governing law, contract seat clause, party domicile, enforceable assets, treaty posture, tribunal preferences, and updated case law.”
+
+7. User interactions
+   The app should include:
+
+* Clickable jurisdiction cards
+* Expandable details
+* Foraging map nodes
+* A toggle between “Score View” and “Reasoning View”
+* A button called “Stress Test Case”
+* A button called “Show Counterarguments”
+* A button called “Compare Top Two Venues”
+* A button called “Generate Partner Brief”
+
+8. Stress test interaction
+   When user clicks “Stress Test Case,” show how the recommendation changes under different assumptions:
+
+* Evidence quality improves
+* Force majeure clause is narrow
+* Respondent has enforceable assets in Asia
+* Political sensitivity increases
+* Tribunal favors strict contract interpretation
+* Time-to-award becomes critical
+
+Show small changes in venue scores based on assumptions.
+
+9. Partner brief
+   When the user clicks “Generate Partner Brief,” generate a concise mock memo:
+   Title: Preliminary Venue Strategy Brief
+   Sections:
+
+* Case posture
+* Recommended seat
+* Rationale
+* Key risks
+* Counterarguments
+* Evidence gaps
+* Partner decision questions
+
+10. Technical requirements
+    Build this as a modern React app.
+    Use Tailwind CSS.
+    Use reusable components.
+    Use mock data only.
+    No backend required.
+    No external API required.
+    Make it fully clickable and demo-ready.
+    Use clean transitions, hover states, drawers, cards, and tabs.
+    Make the interface responsive for desktop and tablet.
+    Include clear comments in the code so I can edit labels, scores, and case content later.
+
+Important wording:
+Use “Cognisee Epistemic Foraging” throughout the UI.
+Use “Tacit Counsel Layer” for the expert judgment layer.
+Use “Wisdom Vault Signals” for historical case patterns and structured expert knowledge.
+Use “Decision Pathways” for the reasoning exploration layer.
+Avoid saying the AI gives legal advice.
+Frame everything as arbitration strategy intelligence, legal risk exploration, and expert-augmented decision support.
+
+Output:
+Create the complete working app in the current Replit project. Preserve the existing project structure if possible, but replace the current demo content with this new arbitration venue strategy demo. Make sure the app runs immediately with npm install and npm run dev.
